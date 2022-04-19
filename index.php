@@ -1,5 +1,7 @@
-<?php
 
+<?php
+ $paragraph="La parte più nobile dell'uomo è arata nel terreno per farne concime Cit. 'Henry David Thoreau - Walden' ";
+ $profanity= $_GET["profanity"];
 ?>
 
 
@@ -12,6 +14,15 @@
     <title>Bad Words Carmine Passante classe 55</title>
 </head>
 <body>
-    
+    <pre>
+        <?php
+            echo $paragraph;
+        ?> 
+    </pre> 
+    <pre>
+        <?php 
+           echo str_replace($profanity, "***", $paragraph );
+        ?> 
+    </pre>
 </body>
 </html>

@@ -13,16 +13,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bad Words Carmine Passante classe 55</title>
 </head>
-<body>
+<body> 
     <pre>
         <?php
             echo $paragraph;
         ?> 
     </pre> 
     <pre>
+        Lunghezza del paragrafo:
+                    <?php 
+                        echo strlen($paragraph); 
+                    ?> caratteri
+    </pre> 
+    <pre>
         <?php 
            echo str_replace($profanity, "***", $paragraph );
         ?> 
-    </pre>
+    </pre> 
+
 </body>
 </html>
